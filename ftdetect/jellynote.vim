@@ -1,3 +1,1 @@
-au BufRead,BufNewFile *.jn setfiletype jellynote
-
-"ftdetect
+au BufNewFile,BufRead *.jn setfiletype jellynote
