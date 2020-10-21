@@ -40,8 +40,8 @@ syntax match jellyDash "\v^\s*\d\-+.*$"
 syntax match jellyItalic "\v\*.*\*"
 syntax match jellyBold "\v\*{2}.*\*{2}"
 
-syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
-syntax region jellyNote start="\v^\s*\d\:[^\:]" end="$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
+syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation
+syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
 syntax region jellyList start="\v^\s*\:{2}" end="\v\:{2}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider
 
 syntax match jellyExample "\v^\s*\/[^\/].*$"
