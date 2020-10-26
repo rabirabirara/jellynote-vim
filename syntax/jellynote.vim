@@ -47,6 +47,7 @@ syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jel
 
 syntax match jellyExample "\v^\s*\/[^\/].*$"
 syntax match jellyExample "\v\`.*\`"
+syntax match jellyExample "\v^\s*\/{2}[^\/].*$"
 " One is for examples, one is for code examples
 syntax region jellyWhiteboard start="\v^\s*\/{3}" end="\v\/{3}" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation
 syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
