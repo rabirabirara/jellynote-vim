@@ -33,7 +33,7 @@ syntax match jellyTopic 	"\v^\s*\=.*$"
 syntax match jellyDivider "\V\^-==-"
 syntax match jellyDivider "\V\^..."
 
-syntax match jellyDash "\v^\s*\-+.*$"
+syntax match jellyDash "\v^\s*\-+[^\=].*$"
 syntax match jellyDash "\v^\s*\d\-+.*$"
 
 " These should be included in jellyNote.
