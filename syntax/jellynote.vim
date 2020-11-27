@@ -30,8 +30,8 @@ syntax match jellySubject 	"\v^\s*\+.*\+"
 syntax match jellyTopic 	"\v^\s*\=.*$"
 
 " Note: this is verynomagic syntax
-syntax match jellyDivider "\V\^-==-"
-syntax match jellyDivider "\V\^..."
+syntax match jellyDivider "\V\^\s\*-==-"
+syntax match jellyDivider "\V\^\s\*..."
 
 syntax match jellyDash "\v^\s*\-+[^\=].*$"
 syntax match jellyDash "\v^\s*\d\-+.*$"
