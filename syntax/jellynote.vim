@@ -55,6 +55,8 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 " Make this italic
 syntax match jellyRemark "\v^\s*\#+.*$"
 
+syntax match jellySpecify "\v^\s*\*+.*$"
+
 syntax match jellyLet "\v^\s*\|.*$"
 syntax match jellyLet "\v^\s*\\\.\-\>\|.*$"
 syntax match jellyLet "\v^\s*λ\.\-\>\|.*$"
