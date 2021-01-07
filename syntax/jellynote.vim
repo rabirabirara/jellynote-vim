@@ -36,6 +36,8 @@ syntax match jellyDivider "\V\^\s\*..."
 syntax match jellyDash "\v^\s*\-+[^\=].*$"
 syntax match jellyDash "\v^\s*\d\-+.*$"
 
+syntax match jellySpecify "\v^\s*\*+.*$"
+
 " These should be included in jellyNote.
 syntax match jellyItalic "\v\*.*\*"
 syntax match jellyBold "\v\*{2}.*\*{2}"
@@ -54,8 +56,6 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 
 " Make this italic
 syntax match jellyRemark "\v^\s*\#+.*$"
-
-syntax match jellySpecify "\v^\s*\*+.*$"
 
 syntax match jellyLet "\v^\s*\|.*$"
 syntax match jellyLet "\v^\s*\\\.\-\>\|.*$"
@@ -98,6 +98,7 @@ hi def link jellyList 			Normal	" should be off-normal
 hi def link jellyExample		Operator
 hi def link jellyWhiteboard		Operator
 hi def link jellyRemark			Special
+hi def link jellySpecify        Special
 hi def link jellyLet			Character
 hi def link jellyObservation	MoreMsg
 hi def link jellyReflection 	Grey
