@@ -73,8 +73,8 @@ hi jellySubject		cterm=bold,underline ctermfg=169 gui=bold,underline guifg=#d75f
 hi jellyTopic		cterm=bold ctermfg=208 gui=bold guifg=#ff8700
 hi jellyDivider		cterm=bold ctermfg=208 gui=bold guifg=#ff8700
 hi jellyDash			ctermfg=220 guifg=#ffd700
-" hi jellyItalic		cterm=italic gui=italic
-" hi jellyBold			cterm=bold gui=bold
+hi jellyItalic		cterm=italic gui=italic
+hi jellyBold			cterm=bold gui=bold
 hi jellyNote 		ctermfg=253 guifg=#dadada
 hi jellyList 		ctermfg=195 guifg=#d7ffff
 hi jellyExample		ctermfg=159 guifg=#afffff		" match with v

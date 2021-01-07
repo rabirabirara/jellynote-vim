@@ -36,11 +36,9 @@ syntax match jellyDivider "\V\^\s\*..."
 syntax match jellyDash "\v^\s*\-+[^\=].*$"
 syntax match jellyDash "\v^\s*\d\-+.*$"
 
-syntax match jellySpecify "\v^\s*\*+.*$"
-
 " These should be included in jellyNote.
-syntax match jellyItalic "\v\*.*\*"
-syntax match jellyBold "\v\*{2}.*\*{2}"
+syntax match jellyItalic "\v\*.*\*" contained
+syntax match jellyBold "\v\*{2}.*\*{2}" contained
 
 syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation
 syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
@@ -56,6 +54,8 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 
 " Make this italic
 syntax match jellyRemark "\v^\s*\#+.*$"
+
+syntax match jellySpecify "\v^\s*\*+.*$"
 
 syntax match jellyLet "\v^\s*\|.*$"
 syntax match jellyLet "\v^\s*\\\.\-\>\|.*$"
