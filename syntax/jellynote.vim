@@ -72,7 +72,7 @@ syntax region jellyResponse start="\v^\s*\>[^\>]" end="$"
 syntax match jellyQuote "\v\".*\""
 
 " Equations can end with EOL or with '$'
-syntax match jellyEquation "\v\$[^\$].*[^\$]$"
+syntax match jellyEquation "\v\$[^\$][^$]*\$"
 syntax match jellyEquation "\v^\s*\$[^\$].*$"
 syntax region jellyEquation start="\v\s*\${2}" end="\v\${2}$" contains=jellyDivider,jellyRemark,jellyObservation
 
