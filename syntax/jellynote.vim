@@ -43,13 +43,13 @@ syntax match jellyBold "\v\*{2}.*\*{2}" contained
 syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation
 syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
 syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation
-syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard
+syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify
 
 syntax match jellyExample "\v^\s*\/[^\/].*$"
 syntax match jellyExample "\v\`.*\`"
 syntax match jellyExample "\v^\s*\/{2}[^\/].*$"
 " One is for examples, one is for code examples
-syntax region jellyWhiteboard start="\v^\s*\/{3}" end="\v\/{3}" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation
+syntax region jellyWhiteboard start="\v^\s*\/{3}" end="\v\/{3}" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation,jellySpecify
 syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 
 " Make this italic
@@ -74,7 +74,7 @@ syntax match jellyQuote "\v\".*\""
 " Equations can end with EOL or with '$'
 syntax match jellyEquation "\v\$[^\$][^$]*\$"
 syntax match jellyEquation "\v^\s*\$[^\$].*$"
-syntax region jellyEquation start="\v\s*\${2}" end="\v\${2}$" contains=jellyDivider,jellyRemark,jellyObservation
+syntax region jellyEquation start="\v\s*\${2}" end="\v\${2}$" contains=jellyDivider,jellyRemark,jellyObservation,jellySpecify
 
 " Anything other contains is bad style
 syntax region jellyProblem start="\v^\s*\-\|\=\/" end="\v\\\=\|\-" contains=jellyRemark,jellyObservation,jellyDivider
