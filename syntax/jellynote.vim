@@ -42,7 +42,7 @@ syntax match jellyBold "\v\*{2}.*\*{2}" contained
 
 syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation
 syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
-syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyRemark
+syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
 syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify
 
 syntax match jellyExample "\v^\s*\/[^\/].*$"
@@ -69,10 +69,10 @@ syntax region jellyInquiry start="\v^\s*\?[^\?]" end="$"
 syntax region jellyResponse start="\v^\s*\>{2}" end="\v\<{2}" contains=jellyRemark,jellyObservation,jellyDivider
 syntax region jellyResponse start="\v^\s*\>[^\>]" end="$"
 
-syntax match jellyQuote "\v\".*\""
+syntax region jellyQuote start="\v\"" end="\v\""
 
 " Equations can end with EOL or with '$'
-syntax match jellyEquation "\v\$[^\$][^$]*\$"
+syntax match jellyEquation "\v\$[^\$][^$]*\$" 
 syntax match jellyEquation "\v^\s*\$[^\$].*$"
 syntax region jellyEquation start="\v\s*\${2}" end="\v\${2}$" contains=jellyDivider,jellyRemark,jellyObservation,jellySpecify
 
