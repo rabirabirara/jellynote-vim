@@ -69,25 +69,25 @@ hi PmenuThumb guifg=#c0c0c0
 
 " MY ADDITIONS TO darkblue FOR JELLYNOTE
 
-hi jellySubject		cterm=bold,underline ctermfg=169 gui=bold,underline guifg=#d75faf
-hi jellyTopic		cterm=bold ctermfg=208 gui=bold guifg=#ff8700
-hi jellyDivider		cterm=bold ctermfg=208 gui=bold guifg=#ff8700
+hi jellySubject		    cterm=bold,underline ctermfg=169 gui=bold,underline guifg=#d75faf
+hi jellyTopic		    cterm=bold ctermfg=208 gui=bold guifg=#ff8700
+hi jellyDivider		    cterm=bold ctermfg=208 gui=bold guifg=#ff8700
 hi jellyDash			ctermfg=220 guifg=#ffd700
-hi jellyItalic		cterm=italic gui=italic
+hi jellyItalic		    cterm=italic gui=italic
 hi jellyBold			cterm=bold gui=bold
-hi jellyNote 		ctermfg=253 guifg=#dadada
-hi jellyList 		ctermfg=195 guifg=#d7ffff
-hi jellyExample		ctermfg=159 guifg=#afffff		" match with v
-hi jellyWhiteboard	ctermfg=80 guifg=#5fd7d7		" match with ^
-hi jellyRemark		cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
-hi jellySpecify     ctermfg=31 guifg=#0087af
-hi jellyLet			ctermfg=172 guifg=#d78700		" lighten
-hi jellyObservation	ctermfg=35 guifg=#00af5f		" darken
-hi jellyReflection 	ctermfg=61 guifg=#5f5faf
-hi jellyInquiry		ctermfg=111 guifg=#87afff
+hi jellyNote 		    ctermfg=253 guifg=#dadada
+hi jellyList 		    ctermfg=195 guifg=#d7ffff
+hi jellyExample		    ctermfg=159 guifg=#afffff		" match with v
+hi jellyWhiteboard	    ctermfg=80 guifg=#5fd7d7		" match with ^
+hi jellyRemark		    cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
+hi jellySpecify         ctermfg=172 guifg=#d78700
+hi jellyLet			    ctermfg=31 guifg=#0087af
+hi jellyObservation	    ctermfg=35 guifg=#00af5f		" darken
+hi jellyReflection 	    ctermfg=61 guifg=#5f5faf
+hi jellyInquiry		    ctermfg=111 guifg=#87afff
 hi jellyResponse		ctermfg=97 guifg=#875faf		" brighten
-hi jellyQuote		ctermfg=153 guifg=#afd7ff
+hi jellyQuote		    ctermfg=153 guifg=#afd7ff
 hi jellyEquation		ctermfg=84 guifg=#5fff87 		" dim
-hi jellyProblem		ctermfg=182 guifg=#d7afd7
+hi jellyProblem		    ctermfg=182 guifg=#d7afd7
 hi jellyProblems		ctermfg=182 guifg=#d7afd7
-hi jellyNumber		ctermfg=69 guifg=#5f87ff
+hi jellyNumber		    ctermfg=69 guifg=#5f87ff
