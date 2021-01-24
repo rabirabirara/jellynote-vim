@@ -81,8 +81,7 @@ hi jellyExample		    ctermfg=159  guifg=#afffff		" match with v
 hi jellyWhiteboard	    ctermfg=80   guifg=#5fd7d7		" match with ^
 hi jellyRemark		    cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
 hi jellySpecify         ctermfg=31   guifg=#0087af
-hi jellyLet			    ctermfg=31   guifg=#0087af
-"ctermfg=172  guifg=#d78700
+hi jellyLet			    ctermfg=172  guifg=#d78700
 hi jellyObservation	    ctermfg=35   guifg=#00af5f		" darken
 hi jellyReflection 	    ctermfg=61   guifg=#5f5faf
 hi jellyInquiry		    ctermfg=111  guifg=#87afff
