@@ -82,12 +82,12 @@ hi jellyWhiteboard	    ctermfg=80   guifg=#5fd7d7		" match with ^
 hi jellyRemark		    cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
 hi jellySpecify         ctermfg=31   guifg=#0087af
 hi jellySummarize       ctermfg=225  guifg=#ffd7ff gui=italic
-hi jellySpeak           ctermfg=147  guifg=#afafff
+hi jellySpeak           ctermfg=117  guifg=#87d7ff
 hi jellyLet			    ctermfg=172  guifg=#d78700
 hi jellyObservation	    ctermfg=35   guifg=#00af5f		" darken
 hi jellyReflection 	    ctermfg=61   guifg=#5f5faf
 hi jellyInquiry		    ctermfg=111  guifg=#87afff
-hi jellyResponse		ctermfg=97   guifg=#875faf		" brighten
+hi jellyResponse		ctermfg=99   guifg=#875fff		" brighten
 hi jellyQuote		    ctermfg=153  guifg=#afd7ff
 hi jellyEquation		ctermfg=84   guifg=#5fff87 		" dim
 hi jellyProblem		    ctermfg=182  guifg=#d7afd7
