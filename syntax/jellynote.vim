@@ -56,6 +56,7 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 syntax match jellyRemark "\v^\s*\#+.*$"
 
 " Why are these three broken???? What the fuck?
+" Vim reports them as cleared.  Why?
 syntax match jellySpecify "\v^\s*\*+.*$"
 syntax match jellySummarize "\v^\s*\%+.*$"
 syntax match jellySpeak "\v^\s*\~+.*$"
