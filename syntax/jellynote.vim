@@ -55,10 +55,9 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 " Make this italic
 syntax match jellyRemark "\v^\s*\#+.*$"
 
+" Why are these three broken???? What the fuck?
 syntax match jellySpecify "\v^\s*\*+.*$"
-
-syntax match jellySummarize "\V\^\s\*%\+\.\*\$"
-
+syntax match jellySummarize "\v^\s*\%+.*$"
 syntax match jellySpeak "\v^\s*\~+.*$"
 
 syntax match jellyLet "\v^\s*\|.*$"
