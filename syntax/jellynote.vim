@@ -59,6 +59,8 @@ syntax match jellySpecify "\v^\s*\*+.*$"
 
 syntax match jellySummarize "\v^\s*\%+.*$"
 
+syntax match jellySpeak "\v^\s*\~+.*$"
+
 syntax match jellyLet "\v^\s*\|.*$"
 syntax match jellyLet "\v^\s*\\\.\-\>\|.*$"
 syntax match jellyLet "\v^\s*λ\.\-\>\|.*$"
