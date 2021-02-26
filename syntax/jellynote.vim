@@ -104,6 +104,7 @@ hi def link jellyWhiteboard		Operator
 hi def link jellyRemark			Special
 hi def link jellySpecify        Special
 hi def link jellySummarize      Character
+hi def link jellySpeak          MoreMsg
 hi def link jellyLet			Character
 hi def link jellyObservation	MoreMsg
 hi def link jellyReflection 	Grey
