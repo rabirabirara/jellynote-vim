@@ -93,26 +93,26 @@ syntax region jellyProblems start="\v^\s*\-\|\={2}\/" end="\v\\\={2}\|\-" contai
 " Link # to italic of some kind!
 " Link subject, topic, divider to bold
 
-hi def link jellySubject		Underlined
-hi def link jellyTopic			Title
-hi def link jellyDivider		Title
-hi def link jellyDash			Function
-hi def link jellyNote 			Normal
-hi def link jellyList 			Normal	" should be off-normal
-hi def link jellyExample		Operator
-hi def link jellyWhiteboard		Operator
-hi def link jellyRemark			Special
-hi def link jellySpecify        Special
-hi def link jellySummarize      Character
-hi def link jellySpeak          Operator
-hi def link jellyLet			Character
-hi def link jellyObservation	MoreMsg
-hi def link jellyReflection 	Grey
-hi def link jellyInquiry		Conditional
-hi def link jellyResponse		Conditional
-hi def link jellyQuote			String
-hi def link jellyEquation		Number
-hi def link jellyProblem		Debug
-hi def link jellyNumber			Number
+" hi def link jellySubject		Underlined
+" hi def link jellyTopic			Title
+" hi def link jellyDivider		Title
+" hi def link jellyDash			Function
+" hi def link jellyNote 			Normal
+" hi def link jellyList 			Normal	" should be off-normal
+" hi def link jellyExample		Operator
+" hi def link jellyWhiteboard		Operator
+" hi def link jellyRemark			Special
+" hi def link jellySpecify        Special
+" hi def link jellySummarize      Character
+" hi def link jellySpeak          Operator
+" hi def link jellyLet			Character
+" hi def link jellyObservation	MoreMsg
+" hi def link jellyReflection 	Grey
+" hi def link jellyInquiry		Conditional
+" hi def link jellyResponse		Conditional
+" hi def link jellyQuote			String
+" hi def link jellyEquation		Number
+" hi def link jellyProblem		Debug
+" hi def link jellyNumber			Number
 
 let b:current_syntax = "jellynote"
