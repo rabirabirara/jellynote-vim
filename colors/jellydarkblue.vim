@@ -26,9 +26,9 @@ hi jellyNote 		    ctermfg=253  guifg=#dadada
 hi jellyList 		    ctermfg=195  guifg=#d7ffff
 hi jellyExample		    ctermfg=159  guifg=#afffff		" match with v
 hi jellyWhiteboard	    ctermfg=80   guifg=#5fd7d7		" match with ^
-hi jellyRemark		    cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
+" hi jellyRemark		    cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
 hi jellySpecify		    ctermfg=31   guifg=#0087af
-hi jellySummarize	    ctermfg=225  guifg=#ffd7ff gui=italic
+" hi jellySummarize	    ctermfg=225  guifg=#ffd7ff gui=italic
 hi jellySpeak		    ctermfg=117  guifg=#87d7ff
 hi jellyLet			    ctermfg=173  guifg=#d7875f
 hi jellyObservation	    ctermfg=35   guifg=#00af5f		" darken
