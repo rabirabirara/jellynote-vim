@@ -39,7 +39,7 @@ hi jellyReflection 	    ctermfg=61   guifg=#5f5faf
 hi jellyInquiry		    ctermfg=111  guifg=#87afff
 hi jellyResponse		ctermfg=69   guifg=#5f87ff		" brighten
 hi jellyQuote		    ctermfg=153  guifg=#afd7ff
-hi jellyLink		    cterm=underline gui=underline ctermfg=39   guifg=#00afff
+hi jellyLink		    cterm=underline gui=underline ctermfg=33   guifg=#0077ff
 hi jellyEquation		ctermfg=84   guifg=#5fff87 		" dim
 hi jellyProblem		    ctermfg=182  guifg=#d7afd7
 hi jellyProblems		ctermfg=182  guifg=#d7afd7
