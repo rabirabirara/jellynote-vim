@@ -19,7 +19,7 @@ let colors_name = "jellydarkblue"
 " The background.
 hi Normal ctermbg=4 guibg=#000030
 
-hi jellySubject		    cterm=bold,underline ctermfg=169 gui=bold,underline guifg=#d75faf
+hi jellySubject		    cterm=bold,underline ctermfg=169 gui=bold,underline guifg=#d75faf guisp=#d75faf
 hi jellyTopic		    cterm=bold   ctermfg=208 gui=bold guifg=#ff8700
 hi jellyDivider		    cterm=bold   ctermfg=208 gui=bold guifg=#ff8700
 hi jellyDash			ctermfg=220  guifg=#ffd700
@@ -39,7 +39,7 @@ hi jellyReflection 	    ctermfg=61   guifg=#5f5faf
 hi jellyInquiry		    ctermfg=111  guifg=#87afff
 hi jellyResponse		ctermfg=69   guifg=#5f87ff		" brighten
 hi jellyQuote		    ctermfg=153  guifg=#afd7ff
-hi jellyLink		    cterm=underline gui=underline ctermfg=45 guifg=#00d7ff
+hi jellyLink		    cterm=underline gui=underline ctermfg=45 guifg=#00d7ff guisp=#00d7ff
 hi jellyEquation		ctermfg=84   guifg=#5fff87 		" dim
 hi jellyProblem		    ctermfg=182  guifg=#d7afd7
 hi jellyProblems		ctermfg=182  guifg=#d7afd7
