@@ -40,9 +40,9 @@ syntax match jellyDash "\v^\s*\d\-+.*$"
 syntax match jellyItalic "\v\*.*\*" contained
 syntax match jellyBold "\v\*{2}.*\*{2}" contained
 
-syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation
-syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
-syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold
+syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation
+syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold
+syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold
 syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify,jellyLet
 
 syntax match jellyExample "\v^\s*\/[^\/].*$"
@@ -75,12 +75,14 @@ syntax region jellyResponse start="\v^\s*\>[^\>]" end="$"
 
 syntax region jellyQuote start="\v\"" end="\v\""
 
+syntax region jellyLink start="\v\{" end="\v\}"
+
 " Equations can end with EOL or with '$'
 syntax match jellyEquation "\v\$[^\$][^$]*\$" 
 syntax match jellyEquation "\v^\s*\$[^\$].*$"
 syntax region jellyEquation start="\v\s*\${2}" end="\v\${2}$" contains=jellyDivider,jellyRemark,jellyObservation,jellySpecify
 
-" Anything other contains is bad style
+" Anything other contains is bad style * what does this comment mean??
 syntax region jellyProblem start="\v^\s*\-\|\=\/" end="\v\\\=\|\-" contains=jellyRemark,jellyObservation,jellyDivider
 syntax region jellyProblems start="\v^\s*\-\|\={2}\/" end="\v\\\={2}\|\-" contains=jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyDivider
 
