@@ -54,6 +54,8 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 " Make this italic
 syntax match jellyRemark "\v^\s*\#+.*$"
 
+syntax match jellyRecall "\v^\s*\@+.*$"
+
 syntax match jellySpecify "\v^\s*\*+.*$"
 syntax match jellySummarize "\v^\s*\%+.*$"
 " somewhat discourage the overuse of jellySpeak.  causes you to just rewrite
