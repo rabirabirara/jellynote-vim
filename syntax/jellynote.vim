@@ -56,7 +56,7 @@ syntax match jellyRemark "\v^\s*\#+.*$"
 
 " Inner has two space indents.
 " NOTE: verynomagic.
-syntax match jellyRecall "\V\^\s\*@\.\*@"
+syntax region jellyRecall start="\V\^\s\*@" end="\V@" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation,jellySpecify,jellyLink,jellyLet,jellyQuote,jellyInquiry,jellyResponse,jellySpecify,
 
 syntax match jellySpecify "\v^\s*\*+.*$"
 syntax match jellySummarize "\v^\s*\%+.*$"
@@ -91,33 +91,5 @@ syntax region jellyProblems start="\v^\s*\-\|\={2}\/" end="\v\\\={2}\|\-" contai
 
 " usually indent after nesting for && and ##
 
-
-""" Highlight jellynote delimiters!
-" Normal,Title,Number/SpecialChar,Type,Operator
-" Comment,Constant,Special,Statement,PreProc,Underlined,Ignore,Todo,Character,Function,Conditional,Repeat,Label,Keyword
-" Link # to italic of some kind!
-" Link subject, topic, divider to bold
-
-" hi def link jellySubject		Underlined
-" hi def link jellyTopic			Title
-" hi def link jellyDivider		Title
-" hi def link jellyDash			Function
-" hi def link jellyNote 			Normal
-" hi def link jellyList 			Normal	" should be off-normal
-" hi def link jellyExample		Operator
-" hi def link jellyWhiteboard		Operator
-" hi def link jellyRemark			Special
-" hi def link jellySpecify        Special
-" hi def link jellySummarize      Character
-" hi def link jellySpeak          Operator
-" hi def link jellyLet			Character
-" hi def link jellyObservation	MoreMsg
-" hi def link jellyReflection 	Grey
-" hi def link jellyInquiry		Conditional
-" hi def link jellyResponse		Conditional
-" hi def link jellyQuote			String
-" hi def link jellyEquation		Number
-" hi def link jellyProblem		Debug
-" hi def link jellyNumber			Number
 
 let b:current_syntax = "jellynote"
