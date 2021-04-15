@@ -69,7 +69,10 @@ syntax match jellyLet "\v^\s*\\\.\-\>\|.*$"
 syntax match jellyLet "\v^\s*λ\.\-\>\|.*$"
 
 syntax match jellyObservation "\v^\s*\&+.*$"
-syntax match jellyReflection "\v\|\\\|.*\|\/\|"
+
+" at this point, it's used more like jellyScroll than jellyReflection.
+syntax match jellyReflection "\v^\s*\|\\\|.*\|\/\|"
+syntax match jellyReflection "\v^\s*\|\/\|.*\|\\\|"
 
 syntax region jellyInquiry start="\v^\s*\?{2}" end="\v\;{2}" contains=jellyRemark,jellyObservation,jellyDivider,jellyLink
 syntax region jellyInquiry start="\v^\s*\?[^\?]" end="$"
