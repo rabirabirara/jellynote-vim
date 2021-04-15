@@ -29,7 +29,7 @@ syntax keyword jellyKeys3 let if then else var variable int integer when
 syntax match jellySubject 	"\v^\s*\+.*\+"
 syntax match jellyTopic 	"\v^\s*\=.*$"
 
-" VERYNOMAGIC
+" NOTE: VERYNOMAGIC
 syntax match jellyDivider "\V\^\s\*-==-"
 syntax match jellyDivider "\V\^\s\*..."
 
@@ -55,7 +55,8 @@ syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 syntax match jellyRemark "\v^\s*\#+.*$"
 
 " Inner has two space indents.
-syntax match jellyRecall "\v^\s*\@.*\@"
+" NOTE: verynomagic.
+syntax match jellyRecall "\V\^\s\*@\.\*@"
 
 syntax match jellySpecify "\v^\s*\*+.*$"
 syntax match jellySummarize "\v^\s*\%+.*$"
