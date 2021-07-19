@@ -41,13 +41,14 @@ syntax match jellyItalic "\v\*.*\*" contained
 syntax match jellyBold "\v\*{2}.*\*{2}" contained
 
 syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
-syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold
-syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold
-syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify,jellyLet,jellyQuote
+syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
+syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
+syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify,jellyLet,jellyQuote,jellyCode
 
 syntax region jellyExample start="\v^\s*\/{1,2}[^\/]" end="\v$"
-syntax region jellyCode start="\v\`" end="\v\`"
+
 " One is for examples, one is for code examples
+" convenient that syntax regions can contain themselves
 syntax region jellyWhiteboard start="\v^\s*\/{3}" end="\v\/{3}" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation,jellySpecify
 syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"
 
@@ -56,7 +57,7 @@ syntax match jellyRemark "\v^\s*\#+.*$"
 
 " Inner has two space indents.
 " NOTE: verynomagic.
-syntax region jellyRecall start="\V\^\s\*@" end="\V@" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation,jellySpecify,jellyLet,jellyQuote,jellyInquiry,jellyResponse,jellySpecify,
+syntax region jellyRecall start="\V\^\s\*@" end="\V@" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation,jellySpecify,jellyLet,jellyQuote,jellyInquiry,jellyResponse,jellySpecify
 
 syntax match jellySpecify "\v^\s*\*+.*$"
 syntax match jellySummarize "\v^\s*\%+.*$"
@@ -82,6 +83,8 @@ syntax region jellyResponse start="\v^\s*\>[^\>]" end="$"
 syntax region jellyQuote start="\v\"" end="\v\""
 
 syntax region jellyLink start="\v\{" end="\v\}"
+
+syntax region jellyCode start="\v\`" end="\v\`"
 
 " Equations can end with EOL or with '$'
 syntax match jellyEquation "\v\$[^\$][^$]*\$" 
