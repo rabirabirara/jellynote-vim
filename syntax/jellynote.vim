@@ -40,13 +40,13 @@ syntax match jellyDash "\v^\s*\d\-+.*$"
 syntax match jellyItalic "\v\*.*\*" contained
 syntax match jellyBold "\v\*{2}.*\*{2}" contained
 
-syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation
+syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
 syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold
 syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold
 syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify,jellyLet,jellyQuote
 
 syntax region jellyExample start="\v^\s*\/{1,2}[^\/]" end="\v$"
-syntax region jellyExample start="\v\`" end="\v\`"
+syntax region jellyCode start="\v\`" end="\v\`"
 " One is for examples, one is for code examples
 syntax region jellyWhiteboard start="\v^\s*\/{3}" end="\v\/{3}" contains=jellyObservation,jellyNote,jellyExample,jellyRemark,jellyDivider,jellyEquation,jellySpecify
 syntax region jellyWhiteboard start="\v^\s*\`{3}" end="\v\`{3}"

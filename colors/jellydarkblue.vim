@@ -28,6 +28,7 @@ hi jellyBold			cterm=bold   gui=bold
 hi jellyNote 		    ctermfg=253  guifg=#dadada
 hi jellyList 		    ctermfg=195  guifg=#d7ffff
 hi jellyExample		    ctermfg=159  guifg=#afffff		" match with v
+hi jellyCode		    ctermfg=159  guifg=#afffff		" match with v
 hi jellyWhiteboard	    ctermfg=80   guifg=#5fd7d7		" match with ^
 hi jellyRemark		    cterm=italic ctermfg=191 gui=italic guifg=#d7ff5f
 hi jellyRecall          ctermfg=81   guifg=#5fd7ff
