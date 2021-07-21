@@ -75,9 +75,9 @@ syntax match jellyObservation "\v^\s*\&+.*$"
 syntax match jellyReflection "\v^\s*\|\\\|.*\|\/\|"
 syntax match jellyReflection "\v^\s*\|\/\|.*\|\\\|"
 
-syntax region jellyInquiry start="\v^\s*\?{2}" end="\v\;{2}" contains=jellyRemark,jellyObservation,jellyDivider,jellyLink
+syntax region jellyInquiry start="\v^\s*\?{2}" end="\v\;{2}" contains=jellyRemark,jellyObservation,jellyDivider
 syntax region jellyInquiry start="\v^\s*\?[^\?]" end="$"
-syntax region jellyResponse start="\v^\s*\>{2}" end="\v\<{2}" contains=jellyRemark,jellyObservation,jellyDivider,jellyLink
+syntax region jellyResponse start="\v^\s*\>{2}" end="\v\<{2}" contains=jellyRemark,jellyObservation,jellyDivider
 syntax region jellyResponse start="\v^\s*\>[^\>]" end="$"
 
 syntax region jellyQuote start="\v\"" end="\v\""
@@ -92,8 +92,8 @@ syntax match jellyEquation "\v^\s*\$[^\$].*$"
 syntax region jellyEquation start="\v\s*\${2}" end="\v\${2}$" contains=jellyDivider,jellyRemark,jellyObservation,jellySpecify
 
 " Anything other contains is bad style * what does this comment mean??
-syntax region jellyProblem start="\v^\s*\-\|\=\/" end="\v\\\=\|\-" contains=jellyRemark,jellyObservation,jellyDivider,jellyLink
-syntax region jellyProblems start="\v^\s*\-\|\={2}\/" end="\v\\\={2}\|\-" contains=jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyDivider,jellyLink
+syntax region jellyProblem start="\v^\s*\-\|\=\/" end="\v\\\=\|\-" contains=jellyRemark,jellyObservation,jellyDivider
+syntax region jellyProblems start="\v^\s*\-\|\={2}\/" end="\v\\\={2}\|\-" contains=jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyDivider
 
 " usually indent after nesting for && and ##
 
