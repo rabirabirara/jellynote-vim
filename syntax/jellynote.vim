@@ -40,9 +40,9 @@ syntax match jellyDash "\v^\s*\d\-+.*$"
 syntax match jellyItalic "\v\*.*\*" contained
 syntax match jellyBold "\v\*{2}.*\*{2}" contained
 
-syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
-syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
-syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyLink,jellyItalic,jellyBold,jellyEquation,jellyCode
+syntax region jellyNote start="\v^\s*\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation,jellyCode
+syntax region jellyNote start="\v^\s*\d\:[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation,jellyCode
+syntax region jellyList start="\v^\s*\:{2}[^\:]" end="\v$" contains=jellyNumber,jellyQuote,jellyItalic,jellyBold,jellyEquation,jellyCode
 syntax region jellyList start="\v^\s*\:{3}" end="\v\:{3}" contains=jellyNote,jellyExample,jellyRemark,jellyObservation,jellyInquiry,jellyResponse,jellyEquation,jellyDivider,jellyWhiteboard,jellySpecify,jellyLet,jellyQuote,jellyCode,jellyRecall
 
 syntax region jellyExample start="\v^\s*\/{1,2}[^\/]" end="\v$"
